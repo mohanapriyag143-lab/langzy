@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floorwing Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard">
+    <header>
+        <h1>Floorwing Dashboard</h1>
+        <button id="logout-btn" class="btn btn-secondary">Logout</button>
+    </header>
+    <main class="dashboard-container">
+        <div class="stat-card">
+            <h3>Total Students</h3>
+            <p id="total-students">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Average Points</h3>
+            <p id="average-points">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Top Performer</h3>
+            <p id="top-performer">-</p>
+        </div>
+        <div class="card full-width-card">
+            <h2>All Student Activity</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="all-students-table-body">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

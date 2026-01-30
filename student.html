@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard">
+    <header>
+        <h1>Student Dashboard</h1>
+        <button id="logout-btn" class="btn btn-secondary">Logout</button>
+    </header>
+    <main class="dashboard-container">
+        <div class="card">
+            <h2 id="student-name">Welcome, Student!</h2>
+            <p>Your current score:</p>
+            <div class="points-display" id="student-points">0</div>
+        </div>
+
+        <div class="card">
+            <h3>🏆 Top Performers</h3>
+            <ol id="leaderboard-list">
+                </ol>
+        </div>
+
+        <div class="card">
+            <h3>Milestone Achievements</h3>
+            <div id="milestones-container">
+                </div>
+        </div>
+
+        <div class="card">
+            <h3>🏅 Achievement Badges</h3>
+            <div id="badges-container">
+                </div>
+        </div>
+
+        <div class="card">
+            <h3>Monthly Activity Integration</h3>
+            <ul id="activity-log">
+               </ul>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
