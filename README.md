@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌍 LangZy - AI Language Learning Chatbot
 
 A comprehensive Duolingo-style language learning platform with AI-powered conversational practice, gamification, and support for 20+ languages.
@@ -278,3 +279,7 @@ Contributions welcome! Feel free to:
 **Happy Learning! 🎓🌍**
 
 Built with ❤️ using AI-powered language learning
+=======
+#loginportals
+sample website portal used for registering student database.
+>>>>>>> cc08dc7f059d34ca091460b163bf422649c21c67

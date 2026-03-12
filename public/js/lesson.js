@@ -570,7 +570,7 @@ async function completeLesson() {
 
     // Update progress on backend
     try {
-        await apiCall('/lessons/complete', {
+        const response = await apiCall('/lessons/complete', {
             method: 'POST',
             body: JSON.stringify({
                 lessonId: currentLesson.lessonId,
@@ -580,11 +580,10 @@ async function completeLesson() {
                     total: quizzes.length,
                     correct: correctAnswers
                 },
-                xpEarned,
-                accuracy,
-                heartsUsed: 5 - hearts
+                xpEarned: xpEarned
             })
         });
+        console.log('Progress saved successfully:', response);
     } catch (error) {
         console.error('Failed to save progress:', error);
     }

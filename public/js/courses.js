@@ -110,14 +110,14 @@ async function loadProgress() {
         document.getElementById('lessonsCompleted').textContent =
             userProgress?.lessonsCompleted?.length || 0;
         document.getElementById('accuracyRate').textContent =
-            Math.round(userProgress?.overallAccuracy || 0) + '%';
+            Math.round(userProgress?.accuracy || 0) + '%';
         document.getElementById('vocabularyCount').textContent =
             userProgress?.vocabularyMastered || 0;
     } catch (error) {
         console.error('Failed to load progress:', error);
         userProgress = {
             lessonsCompleted: [],
-            overallAccuracy: 0,
+            accuracy: 0,
             vocabularyMastered: 0,
             unlockedLessons: []
         };
